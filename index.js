@@ -29,7 +29,17 @@ btnEl.addEventListener("click", () => {
 "Розкрити", при повторному натисканні текст знову стає доступним
 і кнопка набуває початкового вигляду.
 */
-
+const passwordButtonEl = document.querySelector("#passwordButton");
+const passwordInputEl = document.querySelector("#passwordInput");
+passwordButtonEl.addEventListener("click", event => {
+    if (passwordInputEl.type === "text") {
+        passwordButtonEl.textContent = "Розкрити";
+        passwordInputEl.type = "password";
+    } else {
+        passwordButtonEl.textContent = "Приховати";
+        passwordInputEl.type = "text";
+    }
+});
 //TODO:==============================================
 /*
 Завдання 4
