@@ -1,1 +1,1 @@
-# blended-js
+# goit-js-blended
